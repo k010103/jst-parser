@@ -11,7 +11,7 @@ def		get_music_data(lines):
 			music_index = re.sub("( |\"|index|:|,|\n)", "", line)
 		if line.find("\"id\":") != -1:
 			music_id = re.sub("( |\"id\"|\"|:|,|\n)", "", line)
-		if line.find("},") != -1:
+		if line.find("}") != -1:
 			music_data[music_index] = music_id
 	return music_data
 
